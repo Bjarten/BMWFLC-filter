@@ -1,0 +1,64 @@
+﻿<Window x:Class="TremorApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TremorApp"
+        mc:Ignorable="d"
+        Title="Ultimate Shaker 3000" Height="470" Width="611">
+    <Grid x:Name="resetFault">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="396" Margin="287,23,0,0" Stroke="Black" VerticalAlignment="Top" Width="142"/>
+
+        <Button Content="Connect" HorizontalAlignment="Left" Margin="10,324,0,0" VerticalAlignment="Top" Width="272" Click="Button_Click" Height="20"/>
+        <RichTextBox x:Name="richTextBox1" HorizontalAlignment="Left" Height="181" VerticalAlignment="Top" Width="120" Margin="149,113,0,0" >
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox x:Name="richTextBox2" HorizontalAlignment="Left" Height="181" VerticalAlignment="Top" Width="120" Margin="11,113,0,0">
+            <FlowDocument/>
+        </RichTextBox>
+        <Button Content="Send" HorizontalAlignment="Left" VerticalAlignment="Top" Width="271" Margin="11,299,0,0" Click="Button_Click_2" Height="20"/>
+        <Button Content="Activate motor" HorizontalAlignment="Left" VerticalAlignment="Top" Width="272" Margin="10,349,0,0" Click="Button_Click_3" Height="20"/>
+        <TextBox x:Name="textBox1Position" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="299,87,0,0" HorizontalAlignment="Left" Width="120"/>
+        <TextBox x:Name="textBox1Dec" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="297,233,0,0"/>
+        <TextBox x:Name="textBox1Acc" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="297,184,0,0" HorizontalAlignment="Left" Width="120"/>
+        <TextBox x:Name="textBox1Velocity" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="297,135,0,0" HorizontalAlignment="Left" Width="120" />
+        <Label Content="Position" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,56,0,0" Height="26" Width="52"/>
+        <Label Content="Velocity" VerticalAlignment="Top" Margin="300,109,0,0" Height="26" HorizontalAlignment="Left" Width="51" RenderTransformOrigin="0.569,1.577"/>
+        <Label Content="Acceleration" VerticalAlignment="Top" Margin="300,158,0,0" Height="26" HorizontalAlignment="Left" Width="75"/>
+        <Label Content="Deceleration" VerticalAlignment="Top" Margin="300,207,0,0" Height="26" HorizontalAlignment="Left" Width="77"/>
+        <Label Content="Output" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="149,87,0,0" Height="26" Width="48"/>
+        <Label Content="Input" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,85,0,0" Height="26" Width="38"/>
+        <Button Content="Loop" HorizontalAlignment="Left" Margin="10,374,0,0" VerticalAlignment="Top" Width="272" Click="Button_Click_4" Height="20"/>
+        <Button Content="Stop loop" HorizontalAlignment="Left" VerticalAlignment="Top" Width="272" Margin="10,399,0,0" Click="Button_Click_5" Height="20"/>
+        <Label Content="Move 1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="297,30,0,0"/>
+        <Button x:Name="sendMove1" Content="Send" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="342,382,0,0" Click="sendMove1_Click"/>
+        <TextBox x:Name="textBox1Jerk" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="300,282,0,0"/>
+        <Label Content="Jerk" VerticalAlignment="Top" Margin="300,256,0,0" Height="26" HorizontalAlignment="Left" Width="77"/>
+        <TextBox x:Name="textBox1JerkDec" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="300,331,0,0"/>
+        <Label Content="Jerkdecel" VerticalAlignment="Top" Margin="300,305,0,0" Height="26" HorizontalAlignment="Left" Width="77"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="396" Margin="442,23,0,0" Stroke="Black" VerticalAlignment="Top" Width="142"/>
+        <TextBox x:Name="textBox2Position" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="454,87,0,0" HorizontalAlignment="Left" Width="120"/>
+        <TextBox x:Name="textBox2Dec" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="452,233,0,0"/>
+        <TextBox x:Name="textBox2Acc" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="452,184,0,0" HorizontalAlignment="Left" Width="120"/>
+        <TextBox x:Name="textBox2Velocity" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="452,135,0,0" HorizontalAlignment="Left" Width="120" />
+        <Label Content="Position" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="455,56,0,0" Height="26" Width="52"/>
+        <Label Content="Velocity" VerticalAlignment="Top" Margin="455,109,0,0" Height="26" HorizontalAlignment="Left" Width="51" RenderTransformOrigin="0.569,1.577"/>
+        <Label Content="Acceleration" VerticalAlignment="Top" Margin="455,158,0,0" Height="26" HorizontalAlignment="Left" Width="75"/>
+        <Label Content="Deceleration" VerticalAlignment="Top" Margin="455,207,0,0" Height="26" HorizontalAlignment="Left" Width="77"/>
+        <Label Content="Move 2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="452,30,0,0"/>
+        <TextBox x:Name="textBox2Jerk" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="455,282,0,0"/>
+        <Label Content="Jerk" VerticalAlignment="Top" Margin="455,256,0,0" Height="26" HorizontalAlignment="Left" Width="77"/>
+        <TextBox x:Name="textBox2JerkDec" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="455,331,0,0"/>
+        <Label Content="Jerkdecel" VerticalAlignment="Top" Margin="455,305,0,0" Height="26" HorizontalAlignment="Left" Width="77"/>
+        <Button x:Name="sendMove2" Content="Send" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="499,382,0,0" Click="sendMove2_Click"/>
+        <Image Margin="11,23,330,359" Source="Inalto.png" Stretch="Fill"/>
+
+    </Grid>
+</Window>

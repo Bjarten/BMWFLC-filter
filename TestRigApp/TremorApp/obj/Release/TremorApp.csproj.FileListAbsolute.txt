@@ -1,0 +1,14 @@
+C:\Users\bjartems\source\repos\TremorApp\TremorApp\bin\Release\TremorApp.exe.config
+C:\Users\bjartems\source\repos\TremorApp\TremorApp\bin\Release\TremorApp.exe
+C:\Users\bjartems\source\repos\TremorApp\TremorApp\bin\Release\TremorApp.pdb
+C:\Users\bjartems\source\repos\TremorApp\TremorApp\obj\Release\MainWindow.g.cs
+C:\Users\bjartems\source\repos\TremorApp\TremorApp\obj\Release\App.g.cs
+C:\Users\bjartems\source\repos\TremorApp\TremorApp\obj\Release\TremorApp_MarkupCompile.cache
+C:\Users\bjartems\source\repos\TremorApp\TremorApp\obj\Release\TremorApp_MarkupCompile.lref
+C:\Users\bjartems\source\repos\TremorApp\TremorApp\obj\Release\MainWindow.baml
+C:\Users\bjartems\source\repos\TremorApp\TremorApp\obj\Release\TremorApp.g.resources
+C:\Users\bjartems\source\repos\TremorApp\TremorApp\obj\Release\TremorApp.Properties.Resources.resources
+C:\Users\bjartems\source\repos\TremorApp\TremorApp\obj\Release\TremorApp.csproj.GenerateResource.Cache
+C:\Users\bjartems\source\repos\TremorApp\TremorApp\obj\Release\TremorApp.csproj.CoreCompileInputs.cache
+C:\Users\bjartems\source\repos\TremorApp\TremorApp\obj\Release\TremorApp.exe
+C:\Users\bjartems\source\repos\TremorApp\TremorApp\obj\Release\TremorApp.pdb

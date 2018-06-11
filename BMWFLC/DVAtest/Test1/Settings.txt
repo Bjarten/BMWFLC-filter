@@ -1,0 +1,27 @@
+//Constants
+//#define PI 3.141592654   // π (predefined)
+#define Fmin 3    // starting frequency
+#define Fmax 6// starting frequency
+#define dF 0.3    // ΔF: frequency step (spacing between the dominant components)
+#define N (int)(((Fmax-Fmin)/dF) + 1)      // number of dominant frequency components
+#define kappa 0.01
+#define G 100 // length of sliding window for max amplitude.
+#define dT 0.01
+#define Tp 10
+#define alpha 0.67
+#define delta (1/dT)*Tp
+#define rho pow(alpha,(1/delta))
+#define H  0.001
+ 
+//i.e. 1 Hz to 4 Hz band
+//--------------------------------------------------------
+//External variables
+float v[N];//array of angular frequencies
+float x[2][N];//reference input vector, 1st row for sin and 2nd row for cos
+float w[2][N];//weight vector, 1st row for sin and 2nd row for cos
+float MU = 0.001;    // μ: adaptive gain parameter
+float MU0_1 = 0.00000001;
+float MU0_2 = 0.00000001;
+float learning_rate_scaling_factors[6] = {50, 25, 10, 5, 2, 1};
+float peak_1_t_since_found = 0;
+float peak_2_t_since_found = 0;
